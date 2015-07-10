@@ -1,0 +1,49 @@
+nav {
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #FFB4B0;
+  margin: 30px 150px 0; 
+}
+
+.type {
+  border: 2px solid black;
+  float: left;
+  background-color: #4DD7FA;
+  margin: 20px 30px 0 150px;
+  height: 450px;
+  width: 12%;
+  padding: 0 40px 0 20px;
+}
+
+div#filt {
+  width: 150px;
+  margin: 15px 60px;
+}
+
+.style {
+  width: 60%;
+  border: 2px solid black;
+  margin: 20px 0;
+  background-color: #FEFAC0;
+  float: left;
+  height: 450px;
+  display: inline; 
+}
+
+div .title {
+  font-size: 1.75em;
+  color: #785616;
+}
+
+.indent {
+  margin: 25px;
+}
+
+.box {
+  width: 80px;
+  display: inline-block;
+}
+
+.flexbox {
+  display: flex;
+}
