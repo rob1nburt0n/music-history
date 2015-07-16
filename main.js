@@ -43,6 +43,11 @@ getElementsByClassName returns an array, the appendChild mehtod is
 only available on elements (e.g. [0]) not on the actual array.
 
 jQuery waiting for document to load $(document).ready...
+
+PART 3
+The entire container for the even songs (plus its details) should have a background color of Sea Shell (SeaShell or #FFF5EE)
+The entire container for the odd songs (plus its details) should have a background color of Mint Cream (MintCream or #F5FFFA)
+The first song container should have bold text.
 */
 songs.unshift("Springstein - by Eric Church on the album Chief");
 
@@ -58,7 +63,14 @@ for (var i = 0; i < songs.length; i++) {
     // console.log(new_song_text);
     output = output + new_song_text;
     // console.log("output: " + output);
+    output = ("<p>" + output + "</p>");
+    var outputOdd = (output + 2);
+    outputOdd.style.backgroundColor="SeaShell";
+
 }
+
+
+
 element.innerHTML = output;
 
 //adding clean songs to the DOM
