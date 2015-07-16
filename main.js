@@ -28,8 +28,6 @@ var t = document.createTextNode("Hello World");     // Create a text node
 h.appendChild(t);  
 
 
-
-
 THIS CREATES AND ADDS SONG PARAGRAPH TO THE .sidebar__right
 var paragraph = document.createElement("p");
 var theTextNode = document.createTextNode("this is a song name");
@@ -50,21 +48,25 @@ songs.unshift("Springstein - by Eric Church on the album Chief");
 
 songs.push("I Love Rock 'n' Roll - by Joan Jett on the album I Love Rock 'n' Roll");
 
+var element = document.getElementById("indent");
+var output = "";
 // Clean up the songs with this loop
 for (var i = 0; i < songs.length; i++) {
-	// console.log(i);
 	var this_song_original_text = songs[i];
+	// console.log(this_song_original_text);
 	var new_song_text = this_song_original_text.replace("*","").replace("@","").replace("(","").replace("!","").replace(">","-");
     // console.log(new_song_text);
-    songs[i] = new_song_text; 
-};
+    output = output + new_song_text;
+    // console.log("output: " + output);
+}
+element.innerHTML = output;
 
 //adding clean songs to the DOM
 
-for (var i = 0; i <songs.length; i++) {
-	var paragraph = document.createElement("p");
-	var theTextNode = document.createTextNode(songs[i]);
-	paragraph.appendChild(theTextNode);
-	// debugger;
-	document.getElementsByClassName("sidebar__right")[0].appendChild(paragraph);
-}
+// for (var i = 0; i <songs.length; i++) {
+// 	// var paragraph = document.createElement("p");
+// 	var theTextNode = document.createTextNode(songs[i]);
+// 	paragraph.appendChild(theTextNode);
+// 	// debugger;
+// 	document.getElementsByClassName("sidebar__right")[0].appendChild(paragraph);
+// }
