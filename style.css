@@ -17,6 +17,17 @@
   border: 2px solid black;
 }
 
+#Album {
+  width: 150px;
+}
+
+#Artist {
+  width: 150px;
+}
+
+#filt {
+  margin-left: 50px;
+}
 
 .sidebar__left { 
   flex-grow: 2;
