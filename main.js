@@ -61,12 +61,11 @@ for (var i = 0; i < songs.length; i++) {
 	// console.log(this_song_original_text);
 	var new_song_text = this_song_original_text.replace("*","").replace("@","").replace("(","").replace("!","").replace(">","-");
     // console.log(new_song_text);
+    new_song_text = ("<p>" + new_song_text + "</p>")
+    
     output = output + new_song_text;
     // console.log("output: " + output);
-    output = ("<p>" + output + "</p>");
-    var outputOdd = (output + 2);
-    outputOdd.style.backgroundColor="SeaShell";
-
+    // output = ("<p>" + "<H3>" + output + "</H3>" + "</p>");
 }
 
 

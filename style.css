@@ -49,3 +49,18 @@ div .title {
   display: inline-block;
 }
 
+p:nth-child(even) {
+  background-color: #FFF5EE;
+  font-size: 125%;
+}
+
+p:nth-child(odd) {
+  background-color: #F5FFFA;
+  font-size: 125%;
+}
+
+p:first-child {
+  font-weight: bold;
+}
+
+
